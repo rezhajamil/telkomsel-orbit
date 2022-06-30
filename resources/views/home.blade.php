@@ -156,9 +156,9 @@
             <div class="inline-block w-full h-10 bg-gray-500 animate-pulse"></div>
         </div>
         {{-- <span class="font-medium capitalize font-batik text-slate-500">Jl. Lintas Langga Payung - Gunung Tua</span> --}}
-        <div class="inline-block h-6 mt-3 bg-gray-500 animate-pulse w-52"></div>
+        <div class="inline-block h-6 mt-3 bg-gray-500 animate-pulse w-[100%] md:w-52"></div>
 
-        <div class="inline-block h-6 mt-3 bg-gray-500 animate-pulse w-52"></div>
+        <div class="inline-block h-6 mt-3 bg-gray-500 animate-pulse w-[100%] md:w-52"></div>
 
         <div class="flex justify-end mt-6 -mb-4 gap-x-5">
             <div class="inline-block h-6 mt-3 bg-gray-500 animate-pulse w-52"></div>
@@ -212,6 +212,7 @@
                         tap
                         , products
                     } = data;
+                    console.log(data)
                     if (!tap.length) {
                         $('#tap-section').append(
                             `<span class="inline-block w-full my-12 text-2xl text-center text-white font-base">Tidak Ada TAP Ditemukan</span>`
@@ -303,6 +304,9 @@
                     })
 
                     $('#loading-card').hide();
+                }
+                , error: (e) => {
+                    console.log(e)
                 }
             });
         }
