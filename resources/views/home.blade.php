@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
-<nav class="px-2 py-4 bg-white border-gray-200 rounded sm:px-4 dark:bg-gray-800">
+<nav class="px-2 py-4 bg-white border-gray-200 rounded sm:px-4 ">
     <div class="container flex flex-wrap items-center justify-between mx-auto gap-y-5">
         <a href="https://myorbit.id" class="flex items-center">
-            <img src="{{ asset('images/logo-orbit.svg') }}" class="h-16 mr-3" alt="Orbit Logo" />
+            <img src="{{ asset('images/logo-orbit.svg') }}" class="h-[40px] md:h-16 mr-3" alt="Orbit Logo" />
         </a>
         <div class="flex md:order-2">
-            <a href="#tap-section" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-semibold transition rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-red-600 dark:hover:bg-red-600 dark:focus:ring-red-800"><i class="mr-3 text-lg fa-solid fa-magnifying-glass"></i>Cari Di Sekitar Anda</a>
+            <a href="#tap-section" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-semibold transition rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 "><i class="mr-3 text-lg fa-solid fa-magnifying-glass"></i>Cari Di Sekitar Anda</a>
         </div>
     </div>
 </nav>
@@ -14,18 +14,18 @@
 <div class="container px-3 py-10">
     <div id="banner-carousel" class="relative h-fit" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative rounded-lg h-[500px]">
+        <div class="overflow-hidden relative rounded-lg h-[150px] md:h-[300px]">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/carousel1.jpg') }}" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="{{ asset('images/carousel1.jpg') }}" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/carousel1.jpg') }}" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="{{ asset('images/carousel1.jpg') }}" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('images/carousel1.jpg') }}" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="{{ asset('images/carousel1.jpg') }}" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>
         <!-- Slider indicators -->
@@ -37,7 +37,7 @@
         <!-- Slider controls -->
         <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex items-center justify-center w-8 h-8 transition bg-red-600 rounded-full sm:w-10 sm:h-10 group-hover:bg-red-700 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                <svg class="w-5 h-5 font-semibold text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-5 h-5 font-semibold text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
                 <span class="hidden">Previous</span>
@@ -45,7 +45,7 @@
         </button>
         <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
             <span class="inline-flex items-center justify-center w-8 h-8 transition bg-red-600 rounded-full sm:w-10 sm:h-10 group-hover:bg-red-700 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
                 <span class="hidden">Next</span>
@@ -92,13 +92,13 @@
         <div class="relative w-full h-full max-w-2xl p-4 md:h-auto" x-on:click.away="toggle()">
 
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow ">
                 <!-- Modal header -->
-                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-gray-900 ">
                         Kirim Pesan Ke Partner Orbit
                     </h3>
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" x-on:click="toggle()">
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " x-on:click="toggle()">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
@@ -113,21 +113,21 @@
                         <input type="text" name="nama" id="nama" placeholder="Nama" class="px-3 py-2 capitalize rounded" required>
                     </label>
                     @error('nama')
-                    <span class="text-red-600 text-sm">{{ $message }}</span>
+                    <span class="text-sm text-red-600">{{ $message }}</span>
                     @enderror
                     <label for="telepon" class="flex flex-col px-5 mt-3 gap-y-1">
                         <span class="font-semibold text-slate-500">Nomor Telepon Yang Dapat Dihubungi</span>
                         <input type="text" name="telepon" id="telepon" placeholder="Nomor Telepon (081234567890)" class="px-3 py-2 capitalize rounded" required>
                     </label>
                     @error('telepon')
-                    <span class="text-red-600 text-sm">{{ $message }}</span>
+                    <span class="text-sm text-red-600">{{ $message }}</span>
                     @enderror
                     <label for="alamat" class="flex flex-col px-5 mt-3 gap-y-1">
                         <span class="font-semibold text-slate-500">Alamat Lengkap Anda</span>
                         <input type="text" name="alamat" id="alamat" placeholder="Alamat" class="px-3 py-2 capitalize rounded" required>
                     </label>
                     @error('alamat')
-                    <span class="text-red-600 text-sm">{{ $message }}</span>
+                    <span class="text-sm text-red-600">{{ $message }}</span>
                     @enderror
                     <label for="produk" class="flex flex-col px-5 mt-3 gap-y-1">
                         <span class="font-semibold text-slate-500">Produk Yang Anda Inginkan</span>
@@ -139,11 +139,11 @@
                         </select>
                     </label>
                     @error('produk')
-                    <span class="text-red-600 text-sm">{{ $message }}</span>
+                    <span class="text-sm text-red-600">{{ $message }}</span>
                     @enderror
                     <!-- Modal footer -->
-                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                        <button type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Kirim Pesan</button>
+                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+                        <button type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Kirim Pesan</button>
                     </div>
 
                 </form>
@@ -188,10 +188,19 @@
         var latitude, longitude;
         let _token = $('meta[name="csrf-token"]').attr('content');
 
+        navigator.permissions.query({
+            name: 'geolocation'
+        }).then(function(result) {
+            if (result.state == 'denied') {
+                alert('Izinkan halaman ini untuk melihat lokasi anda dan Aktifkan GPS anda');
+            }
+        })
+
         if (navigator.geolocation) {
             let coordinates = navigator.geolocation.getCurrentPosition(showPosition);
         } else {
             console.log("Geolocation is not supported by this browser.");
+            // alert('Izinkan Halaman Ini Untuk Melihat Lokasi Anda dan Aktifkan GPS Anda');
         }
 
         async function showPosition(position) {
@@ -216,7 +225,6 @@
                     if (!tap.length) {
                         $('#tap-section').append(
                             `<span class="inline-block w-full my-12 text-2xl text-center text-white font-base">Tidak Ada TAP Ditemukan</span>`
-
                         )
                     }
                     tap.map((item) => {
@@ -232,18 +240,18 @@
 							    <div class="flex items-center mt-2 gap-x-2"><i class="inline-block text-xl fa-solid fa-road text-slate-500"></i><span class="font-sans text-lg font-semibold text-slate-500">± ${item.distance} Km</span></div>
 
                                 <div class="flex justify-center mt-6 -mb-4 md:justify-end">
-                                    <div class="grid w-[50%] grid-cols-3 gap-x-5 gap-y-4 md:w-fit">
-                                        <a href="https://wa.me/62${item.call_center}" class="flex items-center justify-start px-4 py-2 text-white transition bg-green-600 rounded-lg col-span-full md:col-span-1 hover:bg-green-800">
-                                            <i class="mr-3 text-xl fa-brands fa-whatsapp"></i>
-                                            <span class="font-semibold">Whatsapp</span>
+                                    <div class="grid w-[100%] grid-cols-3 gap-x-1 md:gap-x-5 gap-y-4 md:w-fit">
+                                        <a href="https://wa.me/62${item.call_center}" class="flex items-center justify-start px-4 py-2 text-white transition bg-green-600 rounded-lg md:col-span-1 hover:bg-green-800">
+                                            <i class="mr-2 text-[18px] md:mr-3 md:text-xl fa-brands fa-whatsapp"></i>
+                                            <span class="font-semibold">WA</span>
                                         </a>
-                                        <button type="button" class="flex items-center justify-start px-4 py-2 text-white transition bg-red-600 rounded-lg open col-span-full md:col-span-1 hover:bg-red-700" @click="toggle(),id=${item.id}">
-                                            <i class="mr-3 text-xl fa-solid fa-comments"></i>
-                                            <span class="font-semibold whitespace-nowrap">Kirim Pesan</span>
+                                        <button type="button" class="flex items-center justify-start px-4 py-2 text-white transition bg-red-600 rounded-lg open md:col-span-1 hover:bg-red-700" @click="toggle(),id=${item.id}">
+                                            <i class="mr-2 text-[18px] md:mr-3 md:text-xl fa-solid fa-comments"></i>
+                                            <span class="font-semibold whitespace-nowrap">Pesan</span>
                                         </button>
-                                        <a href="tel:0${item.call_center}" class="flex items-center justify-start px-4 py-2 text-red-600 transition bg-white border-2 border-red-600 rounded-lg col-span-full md:col-span-1 hover:border-red-700">
-                                            <i class="mr-3 text-xl fa-solid fa-phone"></i>
-                                            <span class="font-semibold">Telepon</span>
+                                        <a href="tel:0${item.call_center}" class="flex items-center justify-start px-4 py-2 text-red-600 transition bg-white border-2 border-red-600 rounded-lg md:col-span-1 hover:border-red-700">
+                                            <i class="mr-2 text-[18px] md:mr-3 md:text-xl fa-solid fa-phone"></i>
+                                            <span class="font-semibold">Call</span>
                                         </a>
                                     </div>
                                 </div>
@@ -253,55 +261,55 @@
                         )
                     });
 
-                    tap.map((item) => {
-                        $('#tap-section').append(
-                            `<div id="msg-tap-${item.id}" data-modal-placement="center-center" class="fixed top-0 left-0 right-0 z-50 hidden w-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                    // tap.map((item) => {
+                    //     $('#tap-section').append(
+                    //         `<div id="msg-tap-${item.id}" data-modal-placement="center-center" class="fixed top-0 left-0 right-0 z-50 hidden w-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
 
-                                <div class="relative w-full h-full max-w-2xl p-4 md:h-auto">
-                                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                                Kirim Pesan Ke Partner Orbit
-                                            </h3>
-                                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white close" data-modal-toggle="msg-tap-${item.id}">
-                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <form action="/order" method="post">
-                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                            <input type="hidden" name="tap_id" value="${item.id}" required>
-                                            <label for="nama" class="flex flex-col px-5 mt-3 gap-y-1">
-                                                <span class="font-semibold text-slate-500">Nama Anda</span>
-                                                <input type="text" name="nama" id="nama" placeholder="Nama" class="px-3 py-2 capitalize rounded" required>
-                                            </label>
-                                            <label for="telepon" class="flex flex-col px-5 mt-3 gap-y-1">
-                                                <span class="font-semibold text-slate-500">Nomor Telepon Yang Dapat Dihubungi</span>
-                                                <input type="text" name="telepon" id="telepon" placeholder="Nomor Telepon (081234567890)" class="px-3 py-2 capitalize rounded" required>
-                                            </label>
-                                            <label for="telepon" class="flex flex-col px-5 mt-3 gap-y-1">
-                                                <span class="font-semibold text-slate-500">Alamat Lengkap Anda</span>
-                                                <input type="text" name="telepon" id="telepon" placeholder="Alamat" class="px-3 py-2 capitalize rounded" required>
-                                            </label>
-                                            <label for="produk" class="flex flex-col px-5 mt-3 gap-y-1">
-                                                <span class="font-semibold text-slate-500">Produk Yang Anda Inginkan</span>
-                                                <select name="produk" id="produk" class="px-3 py-2 capitalize rounded">
-                                                    ${products.map((item)=>{
-                                                        return(`<option value="${item.nama}">${item.nama}</option>`)
-                                                    })}
-                                                </select>
-                                            </label>
-                                            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                                <button data-modal-toggle="defaultModal" type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Kirim Pesan</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>`
+                    //             <div class="relative w-full h-full max-w-2xl p-4 md:h-auto">
+                    //                 <div class="relative bg-white rounded-lg shadow ">
+                    //                     <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    //                         <h3 class="text-xl font-semibold text-gray-900 ">
+                    //                             Kirim Pesan Ke Partner Orbit
+                    //                         </h3>
+                    //                         <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center close" data-modal-toggle="msg-tap-${item.id}">
+                    //                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    //                                 <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    //                             </svg>
+                    //                         </button>
+                    //                     </div>
+                    //                     <form action="/order" method="post">
+                    //                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    //                         <input type="hidden" name="tap_id" value="${item.id}" required>
+                    //                         <label for="nama" class="flex flex-col px-5 mt-3 gap-y-1">
+                    //                             <span class="font-semibold text-slate-500">Nama Anda</span>
+                    //                             <input type="text" name="nama" id="nama" placeholder="Nama" class="px-3 py-2 capitalize rounded" required>
+                    //                         </label>
+                    //                         <label for="telepon" class="flex flex-col px-5 mt-3 gap-y-1">
+                    //                             <span class="font-semibold text-slate-500">Nomor Telepon Yang Dapat Dihubungi</span>
+                    //                             <input type="text" name="telepon" id="telepon" placeholder="Nomor Telepon (081234567890)" class="px-3 py-2 capitalize rounded" required>
+                    //                         </label>
+                    //                         <label for="telepon" class="flex flex-col px-5 mt-3 gap-y-1">
+                    //                             <span class="font-semibold text-slate-500">Alamat Lengkap Anda</span>
+                    //                             <input type="text" name="telepon" id="telepon" placeholder="Alamat" class="px-3 py-2 capitalize rounded" required>
+                    //                         </label>
+                    //                         <label for="produk" class="flex flex-col px-5 mt-3 gap-y-1">
+                    //                             <span class="font-semibold text-slate-500">Produk Yang Anda Inginkan</span>
+                    //                             <select name="produk" id="produk" class="px-3 py-2 capitalize rounded">
+                    //                                 ${products.map((item)=>{
+                    //                                     return(`<option value="${item.nama}">${item.nama}</option>`)
+                    //                                 })}
+                    //                             </select>
+                    //                         </label>
+                    //                         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+                    //                             <button data-modal-toggle="defaultModal" type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Kirim Pesan</button>
+                    //                         </div>
+                    //                     </form>
+                    //                 </div>
+                    //             </div>
+                    //         </div>`
 
-                        )
-                    })
+                    //     )
+                    // })
 
                     $('#loading-card').hide();
                 }

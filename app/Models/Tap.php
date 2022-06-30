@@ -46,6 +46,32 @@ class Tap extends Model
             }
         }
 
+        if (count($tap) <= 0) {
+            foreach ($all_tap as $key => $data) {
+                $theta = $data->longitude - $longitude;
+                $distance = (sin(deg2rad($data->latitude)) * sin(deg2rad($latitude))) + (cos(deg2rad($data->latitude)) * cos(deg2rad($latitude)) * cos(deg2rad($theta)));
+                $distance = acos($distance);
+                $distance = rad2deg($distance);
+                $distance = $distance * 60 * 1.1515;
+                switch ($unit) {
+                    case 'miles':
+                        break;
+                    case 'kilometers':
+                        $distance = $distance * 1.609344;
+                }
+                $jarak = (round($distance, 2));
+
+                $data->distance = $jarak;
+                array_push($tap, $data);
+
+                if (count($tap) >= 3) {
+                    break;
+                }
+            }
+
+            asort($tap);
+        }
+
         return $tap;
     }
 }
