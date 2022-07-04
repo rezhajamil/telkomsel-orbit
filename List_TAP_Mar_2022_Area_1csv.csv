@@ -1,4 +1,4 @@
-﻿NAMA TAP;ALAMAT;CLUSTER;MITRA_AD_CLUSTER;REGION_CHANNEL;PROPINSI;KABUPATEN;KECAMATAN;KELURAHAN;KODEPOS;CALL_CENTER;EMAIL;LNGTD;LTTDE;;;;
+NAMA TAP;ALAMAT;CLUSTER;MITRA_AD_CLUSTER;REGION_CHANNEL;PROPINSI;KABUPATEN;KECAMATAN;KELURAHAN;KODEPOS;CALL_CENTER;EMAIL;LNGTD;LTTDE;;;;
 HELVETIA;JL. KAPTEN MUSLIM;MEDAN;CV. SINAR TELEKOM;SUMBAGUT;SUMATERA UTARA;KOTA MEDAN;MEDAN HELVETIA;DWIKORA;20123;;taphelvetia@gmail.com;98,645105;3,5965501;;;Row Labels;Count of NAMA TAP
 JOHOR;JL. A.H NASUTION , Kel Gedung Johor, Kec Medan Johor, 20146;MEDAN;CV. SINAR TELEKOM;SUMBAGUT;SUMATERA UTARA;KOTA MEDAN;MEDAN JOHOR;GEDUNG JOHOR;20146;81263901556;tapjohor@gmail.com;98,66374283;3,5388885;;;SUMBAGUT;80
 TIMUR;JL.CEMARA NO.48D & 48E PULO BRAYAN DARAT II;MEDAN;CV. SINAR TELEKOM;SUMBAGUT;SUMATERA UTARA;KOTA MEDAN;MEDAN TIMUR;PULO BRAYAN DARAT II;20239;;tapmedantimu@gmail.com;98,67226;3,6373279;;;SUMBAGTENG ;71
@@ -109,16 +109,16 @@ Lengayang;Jl Raya Pasar Lakitan Lintas Sumatera Padang - Pesisir Selatan ;Padang
 Tapan;Jl Raya Bukit Tapan - Pesisir Selatan;Padang Pariaman;KOPERASI TELEKOMUNIKASI SELULAR;SUMBAGTENG ;SUMATERA BARAT;Tapan;;;;82170821348;pepenkisel88@gmail.com;101,08022;-2,15853;;;;
 Mentawai;Jl Raya Tua Pejat Km 7 Mentawai;Padang Pariaman;KOPERASI TELEKOMUNIKASI SELULAR;SUMBAGTENG ;SUMATERA BARAT;Mentawai;;;;85375555552;nilwan.1988@yahoo.com;99,594245;-2,065038;;;;
 Lubuk Alung;Jl Raya Padang-Bukittinggi Pasar Mudik Lubuk Alung;Padang Pariaman;KOPERASI TELEKOMUNIKASI SELULAR;SUMBAGTENG ;RIAU;Lubuk Alung;;;;85356004444;irwandakisel@yahoo.com;100,28991;-0,6764;;;;
-Ujung Batu;Jl.Jendral Sudirman No 131 Ujung Batu;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Ujung Batu;;;;85272051999;mansyur2010@ymail.com;100.53558°;  0.7084515°;;;;
-Pasir Pengaraian;Jl.Tuanku Tambusai RT 02 RW 03 Pasir Pengaraian;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Pasir Pengaraian;;;;81371366678;marpanti_aka@yahoo.co.id;100.30361°;0.8895231°;;;;
-Kota Tengah;Jl.Lintas Duri RT 01 RW 06 Kota Tengah;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Kota Tengah;;;;82392992929;rhevyhidayat@yahoo.com;100.5473°;1.0887551°;;;;
-Bangkinang;Jl.DI.Panjaitan No 106 Bangkinang Kota;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Bangkinang;;;;82283331333;robby_syamsuddin@ymail.com;101.02155°;0.3395532°;;;;
-Rimbo Panjang;JL.Raya Pekanbaru - Bangkinang KM 16,5 Rimbo Panjang;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Rimbo Panjang;;;;85365099023;jenery.seventina@yahoo.co.id;101.34797°;0.4544733°;;;;
-Flamboyan;JL.Flamboyan V RT 05 RW 03 Tapung;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Flamboyan;;;;82391666222;feriardian4622@gmail.com;101.07764°;0.6272670°;;;;
-Kandis;JL.Lintas Pekanbaru - Duri Km 79 RT 02 RW 04 Kandis;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Kandis;;;;82392700070;irfan.abim@gmail.com;101.24000°;  0.9426607°;;;;
-Pinggir;JL.Lintas Pekanbaru - Duri No 49 RT 04 RW 01 Pinggir;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Pinggir;;;;81275949636;doriaffrinaldo@yahoo.com;101.26248°;1.1850762°;;;;
-Rantau Kasai;JL.Lintas Tanjung Medan RT.05 RW.02 Tambusai Utara;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Rantau Kasai;;;;85374823444;julianto899@yahoo.com;100.37838°;1.2649119°;;;;
-Lipat Kain;JL.HR Subrantas Lipat Kain;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Lipat Kain;;;;81270332619;feriyulistia@yahoo.com;101.20504°;0.0234515°;;;;
+Ujung Batu;Jl.Jendral Sudirman No 131 Ujung Batu;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Ujung Batu;;;;85272051999;mansyur2010@ymail.com;100.53558�;  0.7084515�;;;;
+Pasir Pengaraian;Jl.Tuanku Tambusai RT 02 RW 03 Pasir Pengaraian;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Pasir Pengaraian;;;;81371366678;marpanti_aka@yahoo.co.id;100.30361�;0.8895231�;;;;
+Kota Tengah;Jl.Lintas Duri RT 01 RW 06 Kota Tengah;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Kota Tengah;;;;82392992929;rhevyhidayat@yahoo.com;100.5473�;1.0887551�;;;;
+Bangkinang;Jl.DI.Panjaitan No 106 Bangkinang Kota;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Bangkinang;;;;82283331333;robby_syamsuddin@ymail.com;101.02155�;0.3395532�;;;;
+Rimbo Panjang;JL.Raya Pekanbaru - Bangkinang KM 16,5 Rimbo Panjang;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Rimbo Panjang;;;;85365099023;jenery.seventina@yahoo.co.id;101.34797�;0.4544733�;;;;
+Flamboyan;JL.Flamboyan V RT 05 RW 03 Tapung;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Flamboyan;;;;82391666222;feriardian4622@gmail.com;101.07764�;0.6272670�;;;;
+Kandis;JL.Lintas Pekanbaru - Duri Km 79 RT 02 RW 04 Kandis;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Kandis;;;;82392700070;irfan.abim@gmail.com;101.24000�;  0.9426607�;;;;
+Pinggir;JL.Lintas Pekanbaru - Duri No 49 RT 04 RW 01 Pinggir;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Pinggir;;;;81275949636;doriaffrinaldo@yahoo.com;101.26248�;1.1850762�;;;;
+Rantau Kasai;JL.Lintas Tanjung Medan RT.05 RW.02 Tambusai Utara;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Rantau Kasai;;;;85374823444;julianto899@yahoo.com;100.37838�;1.2649119�;;;;
+Lipat Kain;JL.HR Subrantas Lipat Kain;Rokan Hulu;PT. WAHANA PUTRA YUDHA;SUMBAGTENG ;RIAU;Lipat Kain;;;;81270332619;feriyulistia@yahoo.com;101.20504�;0.0234515�;;;;
 SOLOK;Jl.Jendral Sudirman Pasar Alahan panjang Kecamatan lembah Gumanti Kabupaten Solok;Solok Sraya;CV. AKAR DAYA MANDIRI;SUMBAGTENG ;SUMATERA BARAT;SOLOK;;;;82268812412;firdaushidayat92@gmail.com;100,78749;-1,075666;;;;
 SOLOK;Jl. Datuk Parpatiah Nan Sabatang No. 126, Rt:1/RW:3, Kel. Simpang Rumbio, Kec. Lubuk Sikarah, Kab. Kota Solok, 27316;Solok Sraya;CV. AKAR DAYA MANDIRI;SUMBAGTENG ;SUMATERA BARAT;SOLOK;;;;85374639538;iswandi@akardaya.com;100,665261;-0,79897;;;;
 DHARMASRAYA;Jl. Lintas Sumatera KM 4, Kel. Sungai kambut, Kec. Pulau Punjung, Kab Darmasraya 27572;Solok Sraya;CV. AKAR DAYA MANDIRI;SUMBAGTENG ;SUMATERA BARAT;DHARMASRAYA;;;;85376169076;feryagmal@akardaya.com;101,484221;-0,95068;;;;

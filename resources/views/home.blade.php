@@ -207,6 +207,7 @@
             latitude = position.coords.latitude;
             longitude = position.coords.longitude;
 
+
             $.ajax({
                 url: "{{ URL::to('/home/get_tap') }}"
                 , method: "POST"
@@ -221,23 +222,26 @@
                         tap
                         , products
                     } = data;
-                    console.log(data)
+                    const sortedTap = tap.sort((a, b) => {
+                        return a.distance - b.distance;
+                    })
                     if (!tap.length) {
                         $('#tap-section').append(
                             `<span class="inline-block w-full my-12 text-2xl text-center text-white font-base">Tidak Ada TAP Ditemukan</span>`
                         )
                     }
-                    tap.map((item) => {
-                        $('#tap-section').append(
-                            `<div class="flex flex-col card w-[100%] px-6 py-8 my-8 bg-white rounded-lg md:w-1/2 drop-shadow-2xl shadow-2xl">
-							    <div class="flex items-center justify-between mb-3">
-							        <span class="text-2xl font-bold text-red-600 uppercase font-batik">${item.nama}</span>
-							        <a href="https://www.google.com/maps/search/?api=1&query=${item.latitude}%2C${item.longitude}" target="_blank" class="px-4 py-2 transition border-2 border-red-600 rounded-lg group hover:bg-red-600">
-							            <i class="text-lg text-red-600 transition-all fa-solid fa-location-dot group-hover:text-white"></i>
-							        </a>
-							    </div>
-							    <span class="font-medium capitalize font-batik text-slate-500">${item.alamat}</span>
-							    <div class="flex items-center mt-2 gap-x-2"><i class="inline-block text-xl fa-solid fa-road text-slate-500"></i><span class="font-sans text-lg font-semibold text-slate-500">± ${item.distance} Km</span></div>
+                    sortedTap.map((item, idx) => {
+                        if (idx < 3) {
+                            $('#tap-section').append(
+                                `<div class="flex flex-col card w-[100%] px-6 py-8 my-8 bg-white rounded-lg md:w-1/2 drop-shadow-2xl shadow-2xl">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-2xl font-bold text-red-600 uppercase font-batik">${item.nama}</span>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=${item.latitude}%2C${item.longitude}" target="_blank" class="px-4 py-2 transition border-2 border-red-600 rounded-lg group hover:bg-red-600">
+                                        <i class="text-lg text-red-600 transition-all fa-solid fa-location-dot group-hover:text-white"></i>
+                                    </a>
+                                </div>
+                                <span class="font-medium capitalize font-batik text-slate-500">${item.alamat}</span>
+                                <div class="flex items-center mt-2 gap-x-2"><i class="inline-block text-xl fa-solid fa-road text-slate-500"></i><span class="font-sans text-lg font-semibold text-slate-500">± ${item.distance} Km</span></div>
 
                                 <div class="flex justify-center mt-6 -mb-4 md:justify-end">
                                     <div class="grid w-[100%] grid-cols-3 gap-x-1 md:gap-x-5 gap-y-4 md:w-fit">
@@ -256,9 +260,10 @@
                                     </div>
                                 </div>
 
-							</div>
+                            </div>
                             `
-                        )
+                            )
+                        }
                     });
 
                     // tap.map((item) => {
