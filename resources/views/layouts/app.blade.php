@@ -36,6 +36,21 @@
         }
 
     </style>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHFKWN8D2H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GHFKWN8D2H');
+
+    </script>
+
 </head>
 <body class="font-sans antialiased bg-red-600">
     {{-- <div class="min-h-screen bg-gray-100">
