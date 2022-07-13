@@ -60,7 +60,7 @@
 
 <section class="flex flex-col items-center px-2 md:px-12" id="tap-section" x-data="{modal:false,id:'',toggle() { this.modal = ! this.modal }}">
 
-    <span class="inline-block w-full text-[36px] md:text-6xl font-bold text-center text-white font-batik">Temukan Di Sekitar Anda</span>
+    {{-- <span class="inline-block w-full text-[36px] md:text-6xl font-bold text-center text-white font-batik">Temukan Di Sekitar Anda</span> --}}
 
     {{-- <div class="flex flex-col w-[100%] px-6 py-8 my-16 bg-white rounded-lg md:w-1/2 drop-shadow-2xl shadow-2xl ">
         <div class="flex items-center justify-between">
@@ -245,6 +245,7 @@
                                     </a>
                                 </div>
                                 <span class="font-medium capitalize font-batik text-slate-500">${item.alamat}</span>
+                                <span class="mt-4 font-sans font-semibold capitalize text-slate-500">Jarak Lokasi dengan Anda</span>
                                 <div class="flex items-center mt-2 gap-x-2"><i class="inline-block text-xl fa-solid fa-road text-slate-500"></i><span class="font-sans text-lg font-semibold text-slate-500">± ${item.distance} Km</span></div>
 
                                 <div class="flex justify-center mt-6 -mb-4 md:justify-end">
