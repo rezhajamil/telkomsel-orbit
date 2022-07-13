@@ -15,7 +15,7 @@
     <div id="banner-carousel" class="relative h-fit mx-auto w-[100%] md:w-3/4" data-carousel="static">
 
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative rounded-lg h-[200px] md:h-[500px]">
+        <div class="overflow-hidden relative rounded-lg h-[175px] md:h-[500px]">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="{{ asset('images/banner1.jpg') }}" class="absolute block object-fill w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
